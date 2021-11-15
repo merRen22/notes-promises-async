@@ -6,7 +6,7 @@ In order to handles asynchronism it makes use of an stack which acummulates all 
 
 When the heap is empty the event loop moves the task from the callback queue. This process can be seen in this graph 👇
 
-//image
+![event loop](https://raw.githubusercontent.com/merRen22/notes-promises-async/main/images/heap-event-loop.png)
 
 Its important to remember that the heap has to be empty so the callback events can access it. If the browser is always executing something this would never happend and the promises would not return their data.
 
